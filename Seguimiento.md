@@ -1,5 +1,4 @@
-# Seguimiento 1
-#Abril 6 del 2021
+# Seguimiento 1: Abril 6 del 2021
 ## ¿Qué hemos hecho?🧐
 Crear el repositorio y colocar markdown básico con información pertinente.
 
