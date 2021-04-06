@@ -1,4 +1,4 @@
-# Logica de Programación
+# Proyecto final de lógica de Programación
 
-Luisa Maria Florez
-Juan Andres Gomez
+## Luisa Maria Flórez
+## Juan Andres Gomez
