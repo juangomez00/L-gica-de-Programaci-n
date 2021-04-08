@@ -9,12 +9,12 @@ Crear un nuevo repositorio para aprender a enlazarlo mejor, actualizarlo y tambi
 Por el momento no se nos ha presentado ninguna dificultad para realizar el trabajo.
 
 # Seguimiento 2: Abril 8 del 2021
-## ¿Qué hemos hecho?��
+## ¿Qué hemos hecho?🤔
 Crear el repositorio, colocar markdown básico con información pertinente, crear un nuevo archivo para insertar el seguimiento de nuestro proyecto final.
 
-## ¿Qué vamos a hacer?��‍��
+## ¿Qué vamos a hacer?💻
 Insertar emojis y una imagen acorde al proyecto final.
 
-## ¿Qué dificultades tenemos?��‍♀️
+## ¿Qué dificultades tenemos?🙃
 Al principio no nos funcionaba montar imágenes pero investigamos y al final si nos funcionó.
 
