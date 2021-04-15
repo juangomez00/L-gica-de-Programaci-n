@@ -18,3 +18,7 @@ Insertar emojis y una imagen acorde al proyecto final.
 ## ¿Qué dificultades tenemos?🙃
 Al principio no nos funcionaba montar imágenes pero investigamos y al final si nos funcionó.
 
+##Segumiento 3: Abril 15 del 2021
+## ¿Qué hemos hecho?
+## ¿Qué vamos a hacer?
+## ¿Qué dificultades tenemos?
