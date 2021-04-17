@@ -20,5 +20,8 @@ Al principio no nos funcionaba montar imágenes pero investigamos y al final si 
 
 ## Segumiento 3: Abril 15 del 2021
 ## ¿Qué hemos hecho?
+Ya hemos terminado de crear los archivos necesarios y estamos al dia.
 ## ¿Qué vamos a hacer?
+Hacer Fork con el repositorio del profe, pull request y montar la letra de la canción en el archivo .CSV
 ## ¿Qué dificultades tenemos?
+Ninguno, hemos entendido bien el tema
