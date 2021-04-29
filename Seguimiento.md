@@ -38,7 +38,7 @@ Esperar que el profesor apruebe nuestro cambios con el pull request.
 ## ¿Qué dificultades tenemos? 🤔
 Al principio se nos dificultó el hecho de modificar el repositorio del profesor porque estábamos descargando una actualización vieja del repositorio, entonces los cambio que hacíamos no aparecian por ese mismo error. Luego repetimos el mismo procedimiento y ya después si nos funcionó.
 
-## Seguimiento 5: Abril 29 del 2021
+# Seguimiento 5: Abril 29 del 2021
 ## ¿Qué hemos hecho? ✔️
 Modificar el repositorio de profesor y él aprobó el pull request sin ningún error.
 
