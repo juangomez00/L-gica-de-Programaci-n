@@ -47,3 +47,12 @@ Volver a cambiar el repositorio del profesor, añadiéndo la ruta de nuestra can
 
 ## ¿Qué dificultades tenemos? 🤔
 Se nos dificultó al principio el fork pero después lo solucionamos.
+
+# Seguimiento 6: Mayo 6 del 2021
+## ¿Qué hemos hecho? ✔️
+Se hizo el pull request para actualizar la ruta de la canción en el repositorio original del profesor.
+
+## ¿Qué vamos a hacer? 🕶️
+Empezar a crear nuestro propio proyecto. Escoger el nombre y la temática, y comenzar a crear los códigos respectivos para la interfaz gráfica y para el menú de nuestro proyecto.
+## ¿Qué dificultades tenemos? 🤔
+Se dificultó al principio compilar el programa del profesor, pero se tuvo un reunión previa con él donde se aclararon las dudas.
