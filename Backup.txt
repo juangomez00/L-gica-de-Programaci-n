@@ -29,9 +29,8 @@ public class Reproductor{
 		AnsiConsole.systemInstall();
     	Audio audio = new Audio();
     	int centinela = 0;
-		StringBuilder letra_cancion;
-		
-		String [] canciones = ConsoleFile.read ("recursos/letras.csv");
+
+    	String [] canciones = ConsoleFile.read ("recursos/letras.csv");
     	String [][] info_canciones = ConsoleData.dataList(canciones);
 	
 		System.out.println("Ingrese una opcion asi:");
@@ -47,15 +46,12 @@ public class Reproductor{
 			if(centinela == 2)
 			{
 				//TODO: Controlar que el archivo de la cancion exista
-				audio.seleccionarCancion(info_canciones[2][ConsoleData.RUTA_CANCION]);
+				audio.seleccionarCancion(info_canciones[1][ConsoleData.RUTA_CANCION]);
 				audio.reproducir();
-				centinela = ConsoleInput.getInt();
 			}
-
 			if(centinela == 4)
 			{
 				audio.detener();
-				centinela = ConsoleInput.getInt();
 			}
 
 	}
