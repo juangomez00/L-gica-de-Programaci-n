@@ -47,7 +47,7 @@ public class Reproductor{
 			if(centinela == 2)
 			{
 				//TODO: Controlar que el archivo de la cancion exista
-				audio.seleccionarCancion(info_canciones[2][ConsoleData.RUTA_CANCION]);
+				audio.seleccionarCancion(info_canciones[1][ConsoleData.RUTA_CANCION]);
 				audio.reproducir();
 				centinela = ConsoleInput.getInt();
 			}
