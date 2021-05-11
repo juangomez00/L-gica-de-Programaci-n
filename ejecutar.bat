@@ -1,2 +1,2 @@
-java -classpath .;jansi-2.1.0.jar Reproductor
+java -classpath .;jansi-2.1.0.jar Programa
 pause
