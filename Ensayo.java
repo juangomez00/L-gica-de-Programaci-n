@@ -1,11 +1,9 @@
 import java.util.Scanner;
-import org.fusesource.jansi.AnsiConsole;
-import static org.fusesource.jansi.Ansi.*;
-import static org.fusesource.jansi.Ansi.Color.*;
+import java.util.Random;
 
-    public class Ensayo{
-    public static void menu(){
-        System.out.println("         ;               ___                   ___         ___  ");            
+public class Programa{
+    public static void menu() {
+    System.out.println("         ;               ___                   ___         ___  ");            
         System.out.println("         ;;             /\\  \\        ___      /\\__\\       /\\  \\                ");
         System.out.println("         ;';.          /::\\  \\      /\\  \\    /::|  |     /::\\  \\               ");
         System.out.println("         ;  ;;        /:/\\ \\  \\     \\:\\  \\  /:|:|  |    /:/\\:\\  \\           ");
@@ -28,95 +26,139 @@ import static org.fusesource.jansi.Ansi.Color.*;
         System.out.println("           \\/__/       \\/__/\\/__/       \\/__/       \\/__/                       ");
         System.out.println("     ¡Bienvenido a SingAlong!");
         System.out.println("       Creditos del 1 al 19");
-        
-    }
-    public static String convertirUnicode(String letra,String cadena){
-		
-		StringBuilder str = new StringBuilder(cadena);
-		int indice = -1;
-		char caracter = 0;
-		indice = str.lastIndexOf(letra);
-		
-		if(indice>=0 )
-		{
-			switch(letra){
-				case "á": caracter = '\u00E1';
-					      break;
-				case "é": caracter = '\u00E9';
-					      break;
-				case "í": caracter = '\u00ED';
-					      break;
-		        case "ó": caracter = '\u00F3';
-					      break;
-			    case "ú": caracter = '\u00FA';
-					      break;
-				case "ñ": caracter = '\u00F1';
-					      break;
-			}
-			str.replace(indice,indice+1,""+caracter);
-		}
+        }
 
-		return str.toString();
-	}
+    public static String convertirUnicode(String letra,String cadena){
+        
+        StringBuilder str = new StringBuilder(cadena);
+        int indice = -1;
+        char caracter = 0;
+        indice = str.lastIndexOf(letra);
+        
+        if(indice>=0 )
+        {
+            switch(letra){
+                case "á": caracter = '\u00E1';
+                          break;
+                case "é": caracter = '\u00E9';
+                          break;
+                case "í": caracter = '\u00ED';
+                          break;
+                case "ó": caracter = '\u00F3';
+                          break;
+                case "ú": caracter = '\u00FA';
+                          break;
+                case "ñ": caracter = '\u00F1';
+                          break;
+            }
+            str.replace(indice,indice+2,""+caracter);
+        }
+
+        return str.toString();
+    }
 
     public static void imprimir(String cadena)
-	{
-		String str; 
-		str = convertirUnicode("á",str);
-		str = convertirUnicode("é",str);
-		str = convertirUnicode("í",str);
-		str = convertirUnicode("ó",str);
-		str = convertirUnicode("ú",str);
-		str = convertirUnicode("ñ",str);
+    {
+        String str; 
+        str = convertirUnicode("á",cadena);
+        str = convertirUnicode("é",str);
+        str = convertirUnicode("í",str);
+        str = convertirUnicode("ó",str);
+        str = convertirUnicode("ú",str);
+        str = convertirUnicode("ñ",str);
 
-		System.out.println(str); 
-	}
-
+        System.out.println(str);
+    }
     public static StringBuilder obtenerLetraCancion(int inicio,int fin, String[]data)
-	{
-		StringBuilder str = new StringBuilder();
+    {
+        StringBuilder str = new StringBuilder();
 
-		for(int i = inicio; i<=fin; i++)
-		{
-			str.append(data[i]+"\n");
-		}
+        for(int i = inicio; i<=fin; i++)
+        {
+            str.append(data[i]+"\n");
+        }
 
-		return str;
-	}
+        return str;
+    }
     public static int numero_canciones(){
         Scanner datos = new Scanner(System.in);
-        imprimir("Ingresa el número de créditos que desea para su lista de reproducción: ");
+         System.out.println("¡Hola! Bienvenido a SingAlong. Según el número de créditos que ingreses, se reproducirán tus canciones ");
+        imprimir("Ingresa el número de créditos que deseas: ");
         int numero_canciones_lista = datos.nextInt();
         return numero_canciones_lista;
     }
-    public static int peticiondecanciones(){
-        Scanner datos = new Scanner(System.in); 
-        System.out.println("         Lista de Canciones");     
-        System.out.println("          1. Rosas");
-        System.out.println("          2. Me gustas tu");
-        System.out.println("          3. Rayando el sol");
-        System.out.println("          4. A Dios le pido");
-        System.out.println("          5. La camisa negra");
-        System.out.println("          6. Vivo por ella");
-        System.out.println("          7. Maldito duende");
-        System.out.println("          8. En algun lugar");
-        System.out.println("          9. Como camaron");
-        System.out.println("          10. La Gasolina");
-        System.out.println("          11. Dame amor");
-        System.out.println("          12. Laura");
-        System.out.println("          13. Nada valgo sin tu amor");
-        System.out.println("          14. Vinotinto");
-        System.out.println("          15. Cuando sea grande");
-        System.out.println("          16. Cielo");
-        System.out.println("          17. La raja de tu falda");
-        System.out.println("          18. Viva la vida");
-        System.out.println("          19. Lobo lobo hombre en Paris");
-        imprimir("Ingrese el numero de la canción que desee escuchar: ");  
-        int numero_de_cancion = datos.nextInt();
-        return numero_de_cancion;
-	}
+    public static void main(String[] args) {
+        
+        Audio audio = new Audio();
+        Random randomGenerator = new Random ();
+        int centinela = 0;
+        int indice_cancion = 0;
+        int inicio_letra = 0, fin_letra = 0;
+        Random rand = new Random();
+        int randomcancion;
+        int randomInt= randomGenerator.nextInt (300) + 1;
+        String [] canciones = ConsoleFile.readBigFile ("recursos/letras.csv");
+        String [][] info_canciones = ConsoleData.dataList(canciones);
+        StringBuilder letra_cancion;
+        String nombrecancion;
+        System.out.println("");
+        System.out.println("                                                                  ");
+            System.out.println("¡Gracias por ingresar tus créidtos! Ahora sigue nuestro menú: ");
+        System.out.println("1. Presione 1 para que comience tu lista de producción");
+        System.out.println("2. Presiona 2 para detener la canción");
+        System.out.println("3. Imprima la letra de la canción");
+        System.out.println("4. Salir del juego");
+        centinela = ConsoleInput.getInt();
+    do {
+        
+        if (centinela ==1)
+        { 
+            randomcancion = rand.nextInt(18)+1;
+            System.out.println("El numero aleatorio es:" + randomcancion);
+            audio.seleccionarCancion(info_canciones[randomcancion][ConsoleData.RUTA_CANCION]);
+            audio.reproducir();
+            audio.fragmentoAleatorio();
+            System.out.println("Esta sonando " + info_canciones[randomcancion][ConsoleData.NOMBRE_CANCION]);
+            System.out.print("Ingrese el nombre de la cancion  ");
+            nombrecancion = ConsoleInput.getString();
+            String a = "hola";
+            String b = "hola";
+        if(a.equals(b)){
+            System.out.println( "felicidades");
+        }else{
+            System.out.println( "fallaste");
+        }
+            
+        }
+        if(centinela == 3)
+                {
+                    imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                    indice_cancion = ConsoleInput.getInt();
 
-    public static String preguntar_segun_canciones_que_quiere(){
+                    inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+                    fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+                    
+                    letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+
+                    imprimir(letra_cancion.toString().replace(";"," ").substring(0, randomInt));
+                }
+
+
+        System.out.println("");
+        System.out.println("");
+        System.out.println("¡Hola! Bienvenido a GuessTheSong, estas son las opciones de juego:");
+        System.out.println("1. Presione 1 para iniciar el juego, sonara una cancion aleatoria, intenta adivinar cual es y digita su nombre");
+        System.out.println("2. Detener cancion");
+        System.out.println("3. En caso de apoyo, presione 3 para ver un fragmento de la letra, en caso de adivinar la canción ingrese su nombre");
+        System.out.println("3. Imprima las letras de las canciones");
+        System.out.println("4. Salir del juego");
+        centinela = ConsoleInput.getInt();      
+    }while(centinela!=4);
+}
+}
+
+    /*public static String preguntar_segun_canciones_que_quiere(){
         String canciones_que_quiere = "";
         menu();
         int numero_canciones_lista = numero_canciones();
@@ -181,8 +223,8 @@ import static org.fusesource.jansi.Ansi.Color.*;
                 case 19:
                     canciones_que_quiere = canciones_que_quiere.concat("18 ");
                     break;
-                
-               default:
+               
+                default:
                     System.out.println("Esta cancion no existe");
                     i--;
                     break;
@@ -251,11 +293,11 @@ import static org.fusesource.jansi.Ansi.Color.*;
                 respuesta = respuesta.toLowerCase();
                 if(respuesta.equals("si")){
                     inicio_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.INICIO_CANCION]);
-					fin_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.FIN_CANCION]);
-					
-					letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+                    fin_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.FIN_CANCION]);
+                    
+                    letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
 
-					imprimir(letra_cancion.toString());
+                    imprimir(letra_cancion.toString());
 
                 }
 
@@ -271,5 +313,7 @@ import static org.fusesource.jansi.Ansi.Color.*;
     public static void main(String[] args){
         audiolist();
         
-    }
-}
+    }*/
+
+
+

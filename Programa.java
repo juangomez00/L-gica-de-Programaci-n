@@ -1,92 +1,92 @@
 import java.util.Scanner;
 
 public class Programa{
-	public static void menu() {
-		System.out.println("         ;               ___                   ___         ___  ");            
-		System.out.println("         ;;             /\\  \\        ___      /\\__\\       /\\  \\                ");
-		System.out.println("         ;';.          /::\\  \\      /\\  \\    /::|  |     /::\\  \\               ");
-		System.out.println("         ;  ;;        /:/\\ \\  \\     \\:\\  \\  /:|:|  |    /:/\\:\\  \\           ");
-		System.out.println("         ;   ;;      _\\:\\~\\ \\  \\    /::\\__\\/:/|:|  |__ /:/  \\:\\  \\         ");
-		System.out.println("         ;    ;;    /\\ \\:\\ \\ \\__\\__/:/\\/__/:/ |:| /\\__/:/__/_\\:\\__\\       ");
-		System.out.println("         ;    ;;    \\:\\ \\:\\ \\/__/\\/:/  /  \\/__|:|/:/  \\:\\  /\\ \\/__/       ");
-		System.out.println("         ;   ;'      \\:\\ \\:\\__\\ \\::/__/       |:/:/  / \\:\\ \\:\\__\\         ");
-		System.out.println("         ;  '         \\:\\/:/  /  \\:\\__\\       |::/  /   \\:\\/:/  /             ");
-		System.out.println("    ,;;;,;              \\::/  /    \\/__/       /:/  /     \\::/  /                 ");
-		System.out.println("    ;;;;;;  ___         _\\___/__         ___   \\/__/ ___   \\/__/ ;;;;;;;;;;       ");
-		System.out.println("    `;;;;' /\\  \\       /\\__\\/\\  \\       /\\__\\       /\\  \\        ;;;;;;;;;;");
-		System.out.println("          /::\\  \\     /:/  /::\\  \\     /::|  |     /::\\  \\       ;             ");
-		System.out.println("         /:/\\:\\  \\   /:/  /:/\\:\\  \\   /:|:|  |    /:/\\:\\  \\      ;          ");
-		System.out.println("        /::\\~\\:\\  \\ /:/  /:/  \\:\\  \\ /:/|:|  |__ /:/  \\:\\  \\     ;         ");
-		System.out.println("       /:/\\:\\ \\:\\__/:/__/:/__/ \\:\\__/:/ |:| /\\__/:/__/_\\:\\__\\    ;         ");
-		System.out.println("       \\/__\\:\\/:/  \\:\\  \\:\\  \\ /:/  \\/__|:|/:/  \\:\\  /\\ \\/__/    ;      ");
-		System.out.println("            \\::/  / \\:\\  \\:\\  /:/  /    |:/:/  / \\:\\ \\:\\__\\ ,;;;;;         ");
-		System.out.println("            /:/  /   \\:\\  \\:\\/:/  /     |::/  /   \\:\\/:/  / ;;;;;;             ");
-		System.out.println("           /:/  /     \\:\\__\\::/  /      /:/  /     \\::/  /  `;;;;'               ");
-		System.out.println("           \\/__/       \\/__/\\/__/       \\/__/       \\/__/                       ");
-		System.out.println("     ¡Bienvenido a SingAlong!");
-		System.out.println("       Creditos del 1 al 19");
-		
+    public static void menu() {
+        System.out.println("         ;               ___                   ___         ___  ");            
+        System.out.println("         ;;             /\\  \\        ___      /\\__\\       /\\  \\                ");
+        System.out.println("         ;';.          /::\\  \\      /\\  \\    /::|  |     /::\\  \\               ");
+        System.out.println("         ;  ;;        /:/\\ \\  \\     \\:\\  \\  /:|:|  |    /:/\\:\\  \\           ");
+        System.out.println("         ;   ;;      _\\:\\~\\ \\  \\    /::\\__\\/:/|:|  |__ /:/  \\:\\  \\         ");
+        System.out.println("         ;    ;;    /\\ \\:\\ \\ \\__\\__/:/\\/__/:/ |:| /\\__/:/__/_\\:\\__\\       ");
+        System.out.println("         ;    ;;    \\:\\ \\:\\ \\/__/\\/:/  /  \\/__|:|/:/  \\:\\  /\\ \\/__/       ");
+        System.out.println("         ;   ;'      \\:\\ \\:\\__\\ \\::/__/       |:/:/  / \\:\\ \\:\\__\\         ");
+        System.out.println("         ;  '         \\:\\/:/  /  \\:\\__\\       |::/  /   \\:\\/:/  /             ");
+        System.out.println("    ,;;;,;              \\::/  /    \\/__/       /:/  /     \\::/  /                 ");
+        System.out.println("    ;;;;;;  ___         _\\___/__         ___   \\/__/ ___   \\/__/ ;;;;;;;;;;       ");
+        System.out.println("    `;;;;' /\\  \\       /\\__\\/\\  \\       /\\__\\       /\\  \\        ;;;;;;;;;;");
+        System.out.println("          /::\\  \\     /:/  /::\\  \\     /::|  |     /::\\  \\       ;             ");
+        System.out.println("         /:/\\:\\  \\   /:/  /:/\\:\\  \\   /:|:|  |    /:/\\:\\  \\      ;          ");
+        System.out.println("        /::\\~\\:\\  \\ /:/  /:/  \\:\\  \\ /:/|:|  |__ /:/  \\:\\  \\     ;         ");
+        System.out.println("       /:/\\:\\ \\:\\__/:/__/:/__/ \\:\\__/:/ |:| /\\__/:/__/_\\:\\__\\    ;         ");
+        System.out.println("       \\/__\\:\\/:/  \\:\\  \\:\\  \\ /:/  \\/__|:|/:/  \\:\\  /\\ \\/__/    ;      ");
+        System.out.println("            \\::/  / \\:\\  \\:\\  /:/  /    |:/:/  / \\:\\ \\:\\__\\ ,;;;;;         ");
+        System.out.println("            /:/  /   \\:\\  \\:\\/:/  /     |::/  /   \\:\\/:/  / ;;;;;;             ");
+        System.out.println("           /:/  /     \\:\\__\\::/  /      /:/  /     \\::/  /  `;;;;'               ");
+        System.out.println("           \\/__/       \\/__/\\/__/       \\/__/       \\/__/                       ");
+        System.out.println("     ¡Bienvenido a SingAlong!");
+        System.out.println("       Creditos del 1 al 19");
+        
 
  }
 
- 	public static String convertirUnicode(String letra,String cadena){
-		
-		StringBuilder str = new StringBuilder(cadena);
-		int indice = -1;
-		char caracter = 0;
-		indice = str.lastIndexOf(letra);
-		
-		if(indice>=0 )
-		{
-			switch(letra){
-				case "á": caracter = '\u00E1';
-					      break;
-				case "é": caracter = '\u00E9';
-					      break;
-				case "í": caracter = '\u00ED';
-					      break;
-		        case "ó": caracter = '\u00F3';
-					      break;
-			    case "ú": caracter = '\u00FA';
-					      break;
-				case "ñ": caracter = '\u00F1';
-					      break;
-			}
-			str.replace(indice,indice+2,""+caracter);
-		}
+    public static String convertirUnicode(String letra,String cadena){
+        
+        StringBuilder str = new StringBuilder(cadena);
+        int indice = -1;
+        char caracter = 0;
+        indice = str.lastIndexOf(letra);
+        
+        if(indice>=0 )
+        {
+            switch(letra){
+                case "á": caracter = '\u00E1';
+                          break;
+                case "é": caracter = '\u00E9';
+                          break;
+                case "í": caracter = '\u00ED';
+                          break;
+                case "ó": caracter = '\u00F3';
+                          break;
+                case "ú": caracter = '\u00FA';
+                          break;
+                case "ñ": caracter = '\u00F1';
+                          break;
+            }
+            str.replace(indice,indice+2,""+caracter);
+        }
 
-		return str.toString();
-	}
+        return str.toString();
+    }
 
-	public static void imprimir(String cadena)
-	{
-		String str; 
-		str = convertirUnicode("á",cadena);
-		str = convertirUnicode("é",str);
-		str = convertirUnicode("í",str);
-		str = convertirUnicode("ó",str);
-		str = convertirUnicode("ú",str);
-		str = convertirUnicode("ñ",str);
+    public static void imprimir(String cadena)
+    {
+        String str; 
+        str = convertirUnicode("á",cadena);
+        str = convertirUnicode("é",str);
+        str = convertirUnicode("í",str);
+        str = convertirUnicode("ó",str);
+        str = convertirUnicode("ú",str);
+        str = convertirUnicode("ñ",str);
 
-		System.out.println(str);
-	}
+        System.out.println(str);
+    }
     public static StringBuilder obtenerLetraCancion(int inicio,int fin, String[]data)
-	{
-		StringBuilder str = new StringBuilder();
+    {
+        StringBuilder str = new StringBuilder();
 
-		for(int i = inicio; i<=fin; i++)
-		{
-			str.append(data[i]+"\n");
-		}
+        for(int i = inicio; i<=fin; i++)
+        {
+            str.append(data[i]+"\n");
+        }
 
-		return str;
-	}
-	public static int numero_canciones(){
-		Scanner datos = new Scanner(System.in);
-		imprimir("Ingresa el número de créditos que desea para su lista de reproducción: ");
-		int numero_canciones_lista = datos.nextInt();
-		return numero_canciones_lista;
-	}
+        return str;
+    }
+    public static int numero_canciones(){
+        Scanner datos = new Scanner(System.in);
+        imprimir("Ingresa el número de créditos que desea para su lista de reproducción: ");
+        int numero_canciones_lista = datos.nextInt();
+        return numero_canciones_lista;
+    }
     public static int peticiondecanciones(){
         Scanner datos = new Scanner(System.in); 
         System.out.println("         Lista de Canciones");     
@@ -112,7 +112,7 @@ public class Programa{
         imprimir("Ingrese el numero de la canción que desee escuchar: ");  
         int numero_de_cancion = datos.nextInt();
         return numero_de_cancion;
-	}
+    }
     public static String preguntar_segun_canciones_que_quiere(){
         String canciones_que_quiere = "";
         menu();
@@ -122,61 +122,61 @@ public class Programa{
             switch (numero_de_cancion) {
 
                 case 1:
-                    canciones_que_quiere = canciones_que_quiere.concat("1 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("0 ");
                     break;
                 case 2:
-                    canciones_que_quiere = canciones_que_quiere.concat("2 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("1 ");
                     break;
                 case 3:
-                    canciones_que_quiere = canciones_que_quiere.concat("3 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("2 ");
                     break;
                 case 4:
-                    canciones_que_quiere = canciones_que_quiere.concat("4 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("3 ");
                     break;
                 case 5:
-                    canciones_que_quiere = canciones_que_quiere.concat("5 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("4 ");
                     break;
                 case 6:
-                    canciones_que_quiere = canciones_que_quiere.concat("6 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("5 ");
                     break;
                 case 7:
-                    canciones_que_quiere = canciones_que_quiere.concat("7 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("6 ");
                     break;
                 case 8:
-                    canciones_que_quiere = canciones_que_quiere.concat("8 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("7 ");
                     break;
                 case 9:
-                    canciones_que_quiere = canciones_que_quiere.concat("9 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("8 ");
                     break;
                 case 10:
-                    canciones_que_quiere = canciones_que_quiere.concat("10 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("9 ");
                     break;
                 case 11:
-                    canciones_que_quiere = canciones_que_quiere.concat("11 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("10 ");
                     break;
                 case 12:
-                    canciones_que_quiere = canciones_que_quiere.concat("12 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("11 ");
                     break;
                 case 13:
-                    canciones_que_quiere = canciones_que_quiere.concat("13 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("12 ");
                     break;
                 case 14:
-                    canciones_que_quiere = canciones_que_quiere.concat("14 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("13 ");
                     break;
                 case 15:
-                    canciones_que_quiere = canciones_que_quiere.concat("15 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("14 ");
                     break;
                 case 16:
-                    canciones_que_quiere = canciones_que_quiere.concat("16 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("15 ");
                     break;
                 case 17:
-                    canciones_que_quiere = canciones_que_quiere.concat("17 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("16 ");
                     break;
                 case 18:
-                    canciones_que_quiere = canciones_que_quiere.concat("18 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("17 ");
                     break;
                 case 19:
-                    canciones_que_quiere = canciones_que_quiere.concat("19 ");
+                    canciones_que_quiere = canciones_que_quiere.concat("18 ");
                     break;
                
                 default:
@@ -248,11 +248,11 @@ public class Programa{
                 respuesta = respuesta.toLowerCase();
                 if(respuesta.equals("si")){
                     inicio_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.INICIO_CANCION]);
-					fin_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.FIN_CANCION]);
-					
-					letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+                    fin_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.FIN_CANCION]);
+                    
+                    letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
 
-					imprimir(letra_cancion.toString());
+                    imprimir(letra_cancion.toString());
 
                 }
 
