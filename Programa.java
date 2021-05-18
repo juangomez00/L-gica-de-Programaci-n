@@ -108,7 +108,7 @@ public class Programa{
         System.out.println("          16. Cielo");
         System.out.println("          17. La raja de tu falda");
         System.out.println("          18. Viva la vida");
-        System.out.println("          19. Lobo lobo hombre en Paris");
+        System.out.println("          19. Lobo hombre en Paris");
         imprimir("Ingrese el numero de la canción que desee escuchar: ");  
         int numero_de_cancion = datos.nextInt();
         return numero_de_cancion;
@@ -237,11 +237,8 @@ public class Programa{
             for(int i=0;i<listaint.length;i++){
                 audio.seleccionarCancion(info_canciones[listaint[i]][ConsoleData.RUTA_CANCION]);
                 audio.reproducir();
-                if(i<listaint.length-1){
-                    imprimir("Al terminarse esta canción, tu siguiente canción se reproducirá en unos segundos");
-                }
                 Scanner datos = new Scanner(System.in);
-                System.out.print("desea ver la letra de la canción(si/no): ");
+                System.out.print("Deseas ver la letra de la canción(si/no): ");
                 String respuesta = datos.nextLine();
                 respuesta = respuesta.toLowerCase();
                 if(respuesta.equals("si")){
@@ -251,18 +248,16 @@ public class Programa{
                     letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
 
                     imprimir(letra_cancion.toString());
-
                 }
 
-                Thread.sleep(1000*290);
+                Thread.sleep(30000);
                 audio.detener();
+                imprimir("¡Tu reproducción fue exitosa! Esperamos que hayas disfrutado de la canción que escogiste.");
         }}
         catch (Exception e) {
         imprimir("este ha sido el error de ejecución del programa: "+e);
-    }
-    }
-
-
+        }
+        }
     public static void main(String[] args){
         audiolist();
         

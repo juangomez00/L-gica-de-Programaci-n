@@ -49,7 +49,7 @@ public class ConsoleData{
 
 				if(fin_letra>0)
 				{
-					// System.out.println(inicio_letra+" "+fin_letra);
+					//System.out.println(inicio_letra+" "+fin_letra);
 					out.add(inicio_letra+";"+fin_letra+";"+info_actual);
 				}
 
