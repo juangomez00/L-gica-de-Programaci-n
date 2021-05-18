@@ -187,7 +187,6 @@ public class Programa{
         }
         return canciones_que_quiere;
     }
-
     public static String[] lista_canciones(){
         String lista = preguntar_segun_canciones_que_quiere();
         String[] lista_de_canciones = lista.split(" ",0);
@@ -207,7 +206,6 @@ public class Programa{
     public static String[] preguntar_con_randomizacion(){
         String[] lista=lista_canciones();
         Scanner datos = new Scanner(System.in);
-        System.out.print("Desea el modo shuffle(si/no): ");
         String respuesta = datos.nextLine();
         respuesta = respuesta.toLowerCase();
         if(respuesta.equals("si")){
