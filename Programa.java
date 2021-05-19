@@ -116,7 +116,7 @@ public class Programa{
         imprimir("                Ingrese el numero de la canción que desee escuchar: ");  
         int numero = datos.nextInt();
         return numero;
-    }
+    } 
     public static String Canciones(){
         String cancion = "";
         menu();
@@ -214,7 +214,7 @@ public class Programa{
     public static String[] randomizacion(){
         String[] lista=repertorio();
         return lista;
-    }
+    } 
 
     public static int[] listaint(String[] lista){        //Convertir la lista a un tipo de dato int.
         int[] listaint = new int[lista.length];
@@ -257,15 +257,8 @@ public class Programa{
                 
                 if(centinela==1)
                 {
-                 audio.detener();   
-                }
-
-            }
-        }
-
-
-
-               /* Thread.sleep(5000);     //Detiene la canción pasados dos minutos de reproducción.
+                 audio.detener(); 
+                //Thread.sleep(5000);     //Detiene la canción pasados dos minutos de reproducción.
                 audio.detener();
                 System.out.println("                .            .--.  ");
                 System.out.println("     Tu         \\\\          //\\\\ \\  ");
@@ -286,9 +279,14 @@ public class Programa{
                 System.out.println("                       |  |       \\  \\ "); 
                 System.out.println("                       /__\\        |__\\ ");
                 System.out.println("                       /.|          |.\\_ "); 
-                System.out.println("                      `-''          ``-- ");
-        }
-    }*/
+                System.out.println("                      `-''          ``-- "); 
+                 
+
+                }
+
+            }
+        
+    }
         catch (Exception e) {            // Flujo de excepciones que solo entra cuando hay un error de ejecución del programa.
         imprimir("Error de ejecución del programa: "+e);
         }
