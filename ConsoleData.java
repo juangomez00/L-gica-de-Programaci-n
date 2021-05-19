@@ -56,7 +56,7 @@ public class ConsoleData{
 				inicio_letra = i+1;
 				info_actual = data[i];
 				
-			}
+			}  
 
 		}
 

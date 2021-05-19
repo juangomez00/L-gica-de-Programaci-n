@@ -107,8 +107,9 @@ public class Programa{
         System.out.println("          15. Cuando sea grande");
         System.out.println("          16. Cielo");
         System.out.println("          17. La raja de tu falda");
-        System.out.println("          18. Viva la vida");
-        System.out.println("          19. Lobo hombre en Paris");
+        System.out.println("          18. Hijo de la luna");
+        System.out.println("          19. Musica Ligera");
+        System.out.println("          20. Oye mi amor");
         imprimir("Ingrese el numero de la canción que desee escuchar: ");  
         int numero_de_cancion = datos.nextInt();
         return numero_de_cancion;
@@ -178,7 +179,12 @@ public class Programa{
                 case 19:
                     canciones_que_quiere = canciones_que_quiere.concat("18 ");
                     break;
-               
+               case 20:
+                    canciones_que_quiere = canciones_que_quiere.concat("19 ");
+                    break;
+                case 21:
+                    canciones_que_quiere = canciones_que_quiere.concat("20 ");
+                    break;
                 default:
                     System.out.println("Esta cancion no existe");
                     i--;
@@ -250,9 +256,9 @@ public class Programa{
                     imprimir(letra_cancion.toString());
                 }
 
-                Thread.sleep(30000);
+                Thread.sleep(1000*116);
                 audio.detener();
-                imprimir("¡Tu reproducción fue exitosa! Esperamos que hayas disfrutado de la canción que escogiste.");
+                imprimir("Tu reproduccion fue exitosa. Esperamos que hayas disfrutado de la canción que escogiste.");
         }}
         catch (Exception e) {
         imprimir("este ha sido el error de ejecución del programa: "+e);
@@ -263,5 +269,3 @@ public class Programa{
         
     }
 }
-
-
