@@ -229,13 +229,13 @@ public class Programa{
         String [] canciones;
         int inicioletra = 0, finletra = 0;
         canciones = ConsoleFile.readBigFile("recursos/letras.csv");  //Para leer la ruta de las letras de las canciones.
-
         String [][] datocancion;
         StringBuilder letracancion;   //Sirve para almacenar cadenas de caracteres.
         datocancion = ConsoleData.dataList(canciones);
         String[] lista= randomizacion();
         int[] listaint = listaint(lista);
         Audio audio = new Audio();
+        int centinela = 0;
 
         try {
             for(int i=0;i<listaint.length;i++)
@@ -247,15 +247,25 @@ public class Programa{
                 System.out.print("Deseas ver la letra de la cancion(si o no): ");
                 String respuesta = datos.nextLine();
                 respuesta = respuesta.toLowerCase();
-                if(respuesta.equals("si"))
-                {
+                if(respuesta.equals("si")){
                     inicioletra = ConsoleInput.stringToInt(datocancion[listaint[i]][ConsoleData.INICIO_CANCION]);
                     finletra = ConsoleInput.stringToInt(datocancion[listaint[i]][ConsoleData.FIN_CANCION]);
                     letracancion = letraCancion(inicioletra,finletra,canciones);
-                    imprimir(letracancion.toString());
+                    imprimir(letracancion.toString());}
+                    System.out.println("Digita 1 para detener la cancion");
+                    centinela = ConsoleInput.getInt();
+                
+                if(centinela==1)
+                {
+                 audio.detener();   
                 }
 
-                Thread.sleep(5000);     //Detiene la canción pasados dos minutos de reproducción.
+            }
+        }
+
+
+
+               /* Thread.sleep(5000);     //Detiene la canción pasados dos minutos de reproducción.
                 audio.detener();
                 System.out.println("                .            .--.  ");
                 System.out.println("     Tu         \\\\          //\\\\ \\  ");
@@ -278,7 +288,7 @@ public class Programa{
                 System.out.println("                       /.|          |.\\_ "); 
                 System.out.println("                      `-''          ``-- ");
         }
-    }
+    }*/
         catch (Exception e) {            // Flujo de excepciones que solo entra cuando hay un error de ejecución del programa.
         imprimir("Error de ejecución del programa: "+e);
         }
