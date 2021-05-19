@@ -23,10 +23,9 @@ public class Programa{
         System.out.println("            /:/  /   \\:\\  \\:\\/:/  /     |::/  /   \\:\\/:/  / ;;;;;;             ");
         System.out.println("           /:/  /     \\:\\__\\::/  /      /:/  /     \\::/  /  `;;;;'               ");
         System.out.println("           \\/__/       \\/__/\\/__/       \\/__/       \\/__/                       ");
-        System.out.println("     ¡Bienvenido a SingAlong!");
-        System.out.println("       Creditos del 1 al 19");
+        System.out.println("                                 ¡Bienvenido a SingAlong!");
+        System.out.println("                             Una rocola de tan solo un crédito");
         
-
  }
 
     public static String convertirUnicode(String letra,String cadena){
@@ -38,7 +37,10 @@ public class Programa{
         
         if(indice>=0 )
         {
-            switch(letra){
+            switch(letra)
+            {
+                //case "a tildada mayuscula": caracter = '\u00C1';  Este case no nos funciona en nuestro ordenador.
+                          //break;
                 case "á": caracter = '\u00E1';
                           break;
                 case "é": caracter = '\u00E9';
@@ -54,13 +56,13 @@ public class Programa{
             }
             str.replace(indice,indice+2,""+caracter);
         }
-
         return str.toString();
     }
 
     public static void imprimir(String cadena)
     {
         String str; 
+        //str = convertirUnicode("a tiltada mayuscula",cadena); No nos funciona en nuestro ordenador.
         str = convertirUnicode("á",cadena);
         str = convertirUnicode("é",str);
         str = convertirUnicode("í",str);
@@ -70,120 +72,121 @@ public class Programa{
 
         System.out.println(str);
     }
-    public static StringBuilder obtenerLetraCancion(int inicio,int fin, String[]data)
+    public static StringBuilder letraCancion(int inicio,int fin, String[]data)
     {
-        StringBuilder str = new StringBuilder();
-
+        StringBuilder str = new StringBuilder();  //Construye un StringBuilder vacío y con una capacidad por defecto de 16 carácteres.
         for(int i = inicio; i<=fin; i++)
         {
-            str.append(data[i]+"\n");
+            str.append(data[i]+"\n"); //Append:agrega los caracteres al final de builder.
         }
-
         return str;
     }
-    public static int numero_canciones(){
-        Scanner datos = new Scanner(System.in);
-        imprimir("Ingresa el número de créditos que desea para su lista de reproducción: ");
-        int numero_canciones_lista = datos.nextInt();
-        return numero_canciones_lista;
-    }
-    public static int peticiondecanciones(){
-        Scanner datos = new Scanner(System.in); 
-        System.out.println("         Lista de Canciones");     
-        System.out.println("          1. Rosas");
-        System.out.println("          2. Me gustas tu");
-        System.out.println("          3. Rayando el sol");
-        System.out.println("          4. A Dios le pido");
-        System.out.println("          5. La camisa negra");
-        System.out.println("          6. Vivo por ella");
-        System.out.println("          7. Maldito duende");
-        System.out.println("          8. En algun lugar");
-        System.out.println("          9. Como camaron");
-        System.out.println("          10. La Gasolina");
-        System.out.println("          11. Dame amor");
-        System.out.println("          12. Laura");
-        System.out.println("          13. Nada valgo sin tu amor");
-        System.out.println("          14. Vinotinto");
-        System.out.println("          15. Cuando sea grande");
-        System.out.println("          16. Cielo");
-        System.out.println("          17. La raja de tu falda");
-        System.out.println("          18. Hijo de la luna");
-        System.out.println("          19. Musica Ligera");
-        System.out.println("          20. Oye mi amor");
-        imprimir("Ingrese el numero de la canción que desee escuchar: ");  
-        int numero_de_cancion = datos.nextInt();
-        return numero_de_cancion;
-    }
-    public static String preguntar_segun_canciones_que_quiere(){
-        String canciones_que_quiere = "";
-        menu();
-        int numero_canciones_lista = numero_canciones();
-        for(int i=0;i<numero_canciones_lista;i++){
-            int numero_de_cancion = peticiondecanciones();
-            switch (numero_de_cancion) {
 
+    public static int creditos()
+    {
+        Scanner datos = new Scanner(System.in);
+        imprimir("Ingresa el número 1 de créditos para empezar con tu lista de reproducción: ");
+        int creditos_lista = datos.nextInt();
+        return creditos_lista;
+    }
+    public static int peticion(){
+        Scanner datos = new Scanner(System.in); 
+        System.out.println(" ___|)________________________________________________________ ");
+        System.out.println("|___/____________________________|___________________________||    Lista de Canciones ");
+        System.out.println("|__/|_______/|____/|_____/|______|___________________________||   1. Rosas ");
+        System.out.println("|_/(|,\\____/_|___/_|____/_|______|___________________________||  2. Me gustas tu ");
+        System.out.println("|_\\_|_/___|__|__|__|___|__|___|__|___________________________||  3. Rayando el sol ");
+        System.out.println("|   |     | ()  | ()   | ()   |  |                           ||   4. A Dios le pido ");
+        System.out.println("| (_|   -()-  -()-   -()-   -()- | -()-  -()-  -()-   -()-   ||   5. La camisa negra ");
+        System.out.println("|________________________________|__|__()_|__()_|__()__|_____||   6. Vivo por ella ");
+        System.out.println("|__/___\\_________________________|__|__|__|__|__|__|___|_____||    7. Maldito duende ");
+        System.out.println("|__\\___|_________________________|___\\_|___\\_|___\\_|___|_____||  8. En algun lugar ");
+        System.out.println("|_____/__________________________|____\\|____\\|____\\|_________||   9. Como camaron ");
+        System.out.println("|____/___________________________|___________________________||    10. La Gasolina ");
+        System.out.println("           _______       __                                      11. Dame amor ");
+        System.out.println("         /   ------.   / ._`_                                    12. Laura ");
+        System.out.println("        |  /         ~--~    \\                                   13. Nada valgo sin tu amor ");
+        System.out.println("        | |             __    `.____________________ _^-----^    14. Vinotinto ");
+        System.out.println("        | |  I=|=======/--\\=========================| o o o |    15. Cuando sea grande ");
+        System.out.println("        \\ |  I=|=======\\__/=========================|_o_o_o_|    16. Cielo ");
+        System.out.println("         \\|                   /                       ~    ~     17. La raja de tu falda ");
+        System.out.println("           \\       .---.    .                                    18. Hijo de la luna ");
+        System.out.println("             -----'     ~~''                                     19. Musica Ligera ");
+        System.out.println("                                                                 20. Oye mi amor ");
+        imprimir("                Ingrese el numero de la canción que desee escuchar: ");  
+        int numero = datos.nextInt();
+        return numero;
+    }
+    public static String Canciones(){
+        String cancion = "";
+        menu();
+        int creditos_lista = creditos();
+        for(int i=0;i<creditos_lista;i++){
+            int numero = peticion();
+            switch (numero)    //switch es una instrucción de múltiples vías para concatenar cada canción con la opción del número.
+            {
                 case 1:
-                    canciones_que_quiere = canciones_que_quiere.concat("0 ");
+                    cancion = cancion.concat("0 ");
                     break;
                 case 2:
-                    canciones_que_quiere = canciones_que_quiere.concat("1 ");
+                    cancion = cancion.concat("1 ");
                     break;
                 case 3:
-                    canciones_que_quiere = canciones_que_quiere.concat("2 ");
+                    cancion = cancion.concat("2 ");
                     break;
                 case 4:
-                    canciones_que_quiere = canciones_que_quiere.concat("3 ");
+                    cancion = cancion.concat("3 ");
                     break;
                 case 5:
-                    canciones_que_quiere = canciones_que_quiere.concat("4 ");
+                    cancion = cancion.concat("4 ");
                     break;
                 case 6:
-                    canciones_que_quiere = canciones_que_quiere.concat("5 ");
+                    cancion = cancion.concat("5 ");
                     break;
                 case 7:
-                    canciones_que_quiere = canciones_que_quiere.concat("6 ");
+                    cancion = cancion.concat("6 ");
                     break;
                 case 8:
-                    canciones_que_quiere = canciones_que_quiere.concat("7 ");
+                    cancion = cancion.concat("7 ");
                     break;
                 case 9:
-                    canciones_que_quiere = canciones_que_quiere.concat("8 ");
+                    cancion = cancion.concat("8 ");
                     break;
                 case 10:
-                    canciones_que_quiere = canciones_que_quiere.concat("9 ");
+                    cancion = cancion.concat("9 ");
                     break;
                 case 11:
-                    canciones_que_quiere = canciones_que_quiere.concat("10 ");
+                    cancion = cancion.concat("10 ");
                     break;
                 case 12:
-                    canciones_que_quiere = canciones_que_quiere.concat("11 ");
+                    cancion = cancion.concat("11 ");
                     break;
                 case 13:
-                    canciones_que_quiere = canciones_que_quiere.concat("12 ");
+                    cancion = cancion.concat("12 ");
                     break;
                 case 14:
-                    canciones_que_quiere = canciones_que_quiere.concat("13 ");
+                    cancion = cancion.concat("13 ");
                     break;
                 case 15:
-                    canciones_que_quiere = canciones_que_quiere.concat("14 ");
+                    cancion = cancion.concat("14 ");
                     break;
                 case 16:
-                    canciones_que_quiere = canciones_que_quiere.concat("15 ");
+                    cancion = cancion.concat("15 ");
                     break;
                 case 17:
-                    canciones_que_quiere = canciones_que_quiere.concat("16 ");
+                    cancion = cancion.concat("16 ");
                     break;
                 case 18:
-                    canciones_que_quiere = canciones_que_quiere.concat("17 ");
+                    cancion = cancion.concat("17 ");
                     break;
                 case 19:
-                    canciones_que_quiere = canciones_que_quiere.concat("18 ");
+                    cancion = cancion.concat("18 ");
                     break;
                case 20:
-                    canciones_que_quiere = canciones_que_quiere.concat("19 ");
+                    cancion = cancion.concat("19 ");
                     break;
                 case 21:
-                    canciones_que_quiere = canciones_que_quiere.concat("20 ");
+                    cancion = cancion.concat("20 ");
                     break;
                 default:
                     System.out.println("Esta cancion no existe");
@@ -191,81 +194,97 @@ public class Programa{
                     break;
             }
         }
-        return canciones_que_quiere;
+        return cancion;
     }
-    public static String[] lista_canciones(){
-        String lista = preguntar_segun_canciones_que_quiere();
-        String[] lista_de_canciones = lista.split(" ",0);
-        return lista_de_canciones;
+    public static String[] repertorio(){         
+        String lista = Canciones();        //Declarar e inicializar el repertorio de las canciones.
+        String[] listacanciones = lista.split(" ",0);
+        return listacanciones;
     }
 
     public static void randomizar(String[] lista){
-        int numero_de_elementos = lista.length;
-        for(int i=0;i<numero_de_elementos;++i){
-            int numero_random = i+(int)(Math.random() * (numero_de_elementos-i));
+        int numerodecanciones = lista.length;
+        for(int i=0;i<numerodecanciones;++i){
+            int numero_random = i+(int)(Math.random() * (numerodecanciones-i));  //Establecer la lista de las canciones con la ayuda del math.random.
             String temporal = lista[numero_random];
             lista[numero_random] = lista[i];
             lista[i] = temporal;
         }
     }
-
-    public static String[] preguntar_con_randomizacion(){
-        String[] lista=lista_canciones();
-        Scanner datos = new Scanner(System.in);
-        String respuesta = datos.nextLine();
-        respuesta = respuesta.toLowerCase();
-        if(respuesta.equals("si")){
-            randomizar(lista);
-        }
+    public static String[] randomizacion(){
+        String[] lista=repertorio();
         return lista;
-
     }
 
-    public static int[] convertir_lista_a_int(String[] lista){
+    public static int[] listaint(String[] lista){        //Convertir la lista a un tipo de dato int.
         int[] listaint = new int[lista.length];
         for(int i=0;i<lista.length;i++){
-            listaint[i] = Integer.parseInt(lista[i]);
+            listaint[i] = Integer.parseInt(lista[i]);   // La función parseInt comprueba la una cadena e intenta devolver un entero de la base especificada.
         }
         return listaint;
     }
 
-    public static void audiolist(){
+    public static void SingAlong()
+    {
         String [] canciones;
-        int inicio_letra = 0, fin_letra = 0;
-        canciones = ConsoleFile.readBigFile("recursos/letras.csv");
-        String [][] info_canciones;
-        StringBuilder letra_cancion;
-        info_canciones = ConsoleData.dataList(canciones);
-        String[] lista= preguntar_con_randomizacion();
-        int[] listaint = convertir_lista_a_int(lista);
+        int inicioletra = 0, finletra = 0;
+        canciones = ConsoleFile.readBigFile("recursos/letras.csv");  //Para leer la ruta de las letras de las canciones.
+
+        String [][] datocancion;
+        StringBuilder letracancion;   //Sirve para almacenar cadenas de caracteres.
+        datocancion = ConsoleData.dataList(canciones);
+        String[] lista= randomizacion();
+        int[] listaint = listaint(lista);
         Audio audio = new Audio();
+
         try {
-            for(int i=0;i<listaint.length;i++){
-                audio.seleccionarCancion(info_canciones[listaint[i]][ConsoleData.RUTA_CANCION]);
+            for(int i=0;i<listaint.length;i++)
+            {
+                audio.seleccionarCancion(datocancion[listaint[i]][ConsoleData.RUTA_CANCION]);
                 audio.reproducir();
+
                 Scanner datos = new Scanner(System.in);
-                System.out.print("Deseas ver la letra de la canción(si/no): ");
+                System.out.print("Deseas ver la letra de la cancion(si o no): ");
                 String respuesta = datos.nextLine();
                 respuesta = respuesta.toLowerCase();
-                if(respuesta.equals("si")){
-                    inicio_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.INICIO_CANCION]);
-                    fin_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.FIN_CANCION]);
-                    
-                    letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-                    imprimir(letra_cancion.toString());
+                if(respuesta.equals("si"))
+                {
+                    inicioletra = ConsoleInput.stringToInt(datocancion[listaint[i]][ConsoleData.INICIO_CANCION]);
+                    finletra = ConsoleInput.stringToInt(datocancion[listaint[i]][ConsoleData.FIN_CANCION]);
+                    letracancion = letraCancion(inicioletra,finletra,canciones);
+                    imprimir(letracancion.toString());
                 }
 
-                Thread.sleep(1000*116);
+                Thread.sleep(5000);     //Detiene la canción pasados dos minutos de reproducción.
                 audio.detener();
-                imprimir("Tu reproduccion fue exitosa. Esperamos que hayas disfrutado de la canción que escogiste.");
-        }}
-        catch (Exception e) {
-        imprimir("este ha sido el error de ejecución del programa: "+e);
+                System.out.println("                .            .--.  ");
+                System.out.println("     Tu         \\\\          //\\\\ \\  ");
+                System.out.println("reproduccion    .\\\\        ///_\\\\\\\\ ");
+                System.out.println(" fue exitosa.   :/>`      /(| `|'\\\\\\ ");
+                System.out.println(" Esperamos       Y/\\      )))\\_-_/((\\  ");
+                System.out.println(" que hayas        \\ \\    ./'_/   \\_`\\)  ");
+                System.out.println(" disfrutado        \\ \\.- ._ \\   /   \\  ");
+                System.out.println("de la cancion       \\ _.-  (_ \\Y/ _) | ");
+                System.out.println("que escogiste.              )  |   /|| ");
+                System.out.println("                         .-'  .'  / || ");
+                System.out.println("                        /    `   /  || ");
+                System.out.println("Vuelve pronto!         |    __  |   ||_ ");
+                System.out.println("                       |   / \\   \\ '|\\` ");
+                System.out.println("                       |  |   \\   \\     ");
+                System.out.println("                       |  |    `.  \\   ");
+                System.out.println("                       |  |      \\  \\  ");
+                System.out.println("                       |  |       \\  \\ "); 
+                System.out.println("                       /__\\        |__\\ ");
+                System.out.println("                       /.|          |.\\_ "); 
+                System.out.println("                      `-''          ``-- ");
         }
+    }
+        catch (Exception e) {            // Flujo de excepciones que solo entra cuando hay un error de ejecución del programa.
+        imprimir("Error de ejecución del programa: "+e);
         }
+    }
     public static void main(String[] args){
-        audiolist();
+        SingAlong();
         
     }
 }
