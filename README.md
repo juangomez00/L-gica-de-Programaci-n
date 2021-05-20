@@ -1,8 +1,8 @@
 # Proyecto final de lógica de Programación🧑🏻‍🎓
 # 🧑‍🎤¡SingAlong!🎼
 ### INTEGRANTES
-Luisa Maria Flórez Múnera👩🏻‍💻
-Juan Andrés Gómez Giraldo🧑🏻‍💻
+## 👩🏻‍💻 Luisa Maria Flórez Múnera https://github.com/luisaflorezm 👩🏻‍💻 
+## 🧑🏻‍💻 Juan Andrés Gómez Giraldo https://github.com/juangomez00 🧑🏻‍💻
 
 # Descripción del Proyecto😃 
 ## Nuestro proyecto se llama 🧑‍🎤Sing Along🎼 y es una simulación de una rocola musical moderna.
@@ -31,8 +31,9 @@ Consta de:
 - Las letras de las canciones al momento de escuchar tu canción preferida con la posibilidad de seleccionarla. 
 
 ## Link de la exposición:
-https://www.canva.com/design/DAEe9NFKSQI/3rsr3GIPrKRgISRApu6rNg/view?utm_content=DAEe9NFKSQI&utm_campaign=designshare&utm_medium=link&utm_source=viewer
+https://www.canva.com/design/DAEe9NFKSQI/3rsr3GIPrKRgISRApu6rNg/view?utm_content=DAEe9NFKSQI&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
 
 ## Link de video explicativo:
+https://youtu.be/vQLiPjJc09A
 
 ![img](https://i.imgur.com/eqkxG5q.png)
