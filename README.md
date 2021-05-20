@@ -11,4 +11,4 @@
 ###### * Una lista de las canciones que hay en ella. 
 ###### * -Las letras de las canciones al momento de escuchar tu canción preferida con la osibilidad de seleccionarla. 
 
-![img]https://i.imgur.com/eqkxG5q.png[/img]
+![img](https://i.imgur.com/eqkxG5q.png)[/img]
