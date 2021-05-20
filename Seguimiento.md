@@ -67,3 +67,13 @@
 
 ## ¿Qué dificultades tenemos?🙃
 ###### El código se nos ha dificultado mucho porque algunas funciones no trabajan de la manera correcta.
+
+# Seguimiento 8: Mayo 19 del 2021
+## ¿Qué hemos hecho?🤔
+###### Complementar el codigo con nuevas funciones.
+
+## ¿Qué vamos a hacer?💻
+###### Adelantar el proyecto y avanzar para finalizarlo.
+
+## ¿Qué dificultades tenemos?🙃
+###### Estuvimos tratando para evolucionar el codigo, pudimos realizarlo y terminarlo.
