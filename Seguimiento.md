@@ -76,4 +76,4 @@
 ###### Adelantar el proyecto y avanzar para finalizarlo.
 
 ## ¿Qué dificultades tenemos?🙃
-###### Estuvimos tratando para evolucionar el codigo, pudimos realizarlo y terminarlo.
+###### Estuvimos tratando para evolucionar el codigo, nos tomó tiempo pero pudimos realizarlo y terminarlo.
