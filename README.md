@@ -1,7 +1,14 @@
 # Proyecto final de lógica de Programación🧑🏻‍🎓
-
+# ¡SingAlong!
 * INTEGRANTES
 ## Luisa Maria Flórez👩🏻‍💻
 ## Juan Andres Gomez🧑🏻‍💻
 
-![Java](https://i.blogs.es/53044d/java/1366_2000.jpg)
+# Descripción del Proyecto
+## Nuestro proyecto se llama Sing Along, el cual es una simulación de una rocola musical moderna.
+## Consta de: 
+## -Un menú de créditos.
+## -Una lista de las canciones que hay en ella. 
+## -Las letras de las canciones al momento de escuchar tu canción preferida con la osibilidad de seleccionarla. 
+
+![SingAlong](file:///C:/Users/HP/Downloads/Sing%20Along.pdf)

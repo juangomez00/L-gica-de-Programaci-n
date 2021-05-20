@@ -85,7 +85,7 @@ public class Programa{
     public static int creditos()
     {
         Scanner datos = new Scanner(System.in);
-        imprimir("Ingresa el número 1 de créditos para empezar con tu lista de reproducción: ");
+        imprimir("Ingresa el número 1 para empezar con tu lista de reproducción: ");
         int creditos_lista = datos.nextInt();
         return creditos_lista;
     }
@@ -108,11 +108,11 @@ public class Programa{
         System.out.println("        |  /         ~--~    \\                                    13. Nada valgo sin tu amor - Juanes");
         System.out.println("        | |             __    `.____________________ _^-----^     14. Vinotinto - Estopa");
         System.out.println("        | |  I=|=======/--\\=========================| o o o |     15. Cuando sea grande - Cuarteto de nos");
-        System.out.println("        \\ |  I=|=======\\__/=========================|_o_o_o_|     16. Cielo - Benny Ibarra");
-        System.out.println("         \\|                   /                       ~    ~      17. La raja de tu falda - Estopa");
-        System.out.println("           \\       .---.    .                                     18. Hijo de la luna - Mecano");
-        System.out.println("             -----'     ~~''                                      19. Musica Ligera - Soda Estereo");
-        System.out.println("                                                                  20. Oye mi amor - Mana");
+        System.out.println("        \\ |  I=|=======\\__/=========================|_o_o_o_|     16. La raja de tu falda - Estopa");
+        System.out.println("         \\|                   /                       ~    ~      17. Hijo de la luna - Mecano");
+        System.out.println("           \\       .---.    .                                     18. Musica Ligera - Soda Estereo");
+        System.out.println("             -----'     ~~''                                      19. Oye mi amor - Mana");
+        System.out.println("                                                                  ");
         System.out.println(" ");
         imprimir("                Ingrese el numero de la canción que desee escuchar: ");  
         int numero = datos.nextInt();
@@ -124,7 +124,8 @@ public class Programa{
         int creditos_lista = creditos();
         for(int i=0;i<creditos_lista;i++){
             int numero = peticion();
-            switch (numero)    //switch es una instrucción de múltiples vías para concatenar cada canción con la opción del número.
+            switch (numero)    //switch es una instrucción de múltiples vías para concatenar cada 
+                               //canción con la opción del número.
             {
                 case 1:
                     cancion = cancion.concat("0 ");
@@ -186,9 +187,6 @@ public class Programa{
                case 20:
                     cancion = cancion.concat("19 ");
                     break;
-                case 21:
-                    cancion = cancion.concat("20 ");
-                    break;
                 default:
                     System.out.println("Esta cancion no existe");
                     i--;
@@ -229,7 +227,7 @@ public class Programa{
     {
         String [] canciones;
         int inicioletra = 0, finletra = 0;
-        canciones = ConsoleFile.readBigFile("recursos/letras.csv");  //Para leer la ruta de las letras de las canciones.
+        canciones = ConsoleFile.readBigFile("recursos/letras.csv");
         String [][] datocancion;
         StringBuilder letracancion;   //Sirve para almacenar cadenas de caracteres.
         datocancion = ConsoleData.dataList(canciones);
@@ -281,8 +279,6 @@ public class Programa{
                 System.out.println("                       /__\\        |__\\ ");
                 System.out.println("                       /.|          |.\\_ "); 
                 System.out.println("                      `-''          ``-- "); 
-                 
-
                 }
 
             }
