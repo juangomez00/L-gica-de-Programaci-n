@@ -6,9 +6,9 @@
 
 # Descripción del Proyecto😃 
 ###### Nuestro proyecto se llama 🧑‍🎤Sing Along🎼, el cual es una simulación de una rocola musical moderna.
-######Consta de: 
-* Un menú de créditos.
-* -Una lista de las canciones que hay en ella. 
-* -Las letras de las canciones al momento de escuchar tu canción preferida con la osibilidad de seleccionarla. 
+###### Consta de: 
+###### * Un menú de créditos.
+###### * Una lista de las canciones que hay en ella. 
+###### * -Las letras de las canciones al momento de escuchar tu canción preferida con la osibilidad de seleccionarla. 
 
-![Sing Along](https://imgur.com/eqkxG5q)
+![img]https://i.imgur.com/eqkxG5q.png[/img]
